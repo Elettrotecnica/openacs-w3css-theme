@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<message_catalog package_key="openacs-w3css-theme" locale="de_DE" charset="ISO-8859-1">
+
+  <msg key="plain">OpenACS W3.CSS Thema</msg>
+</message_catalog>
