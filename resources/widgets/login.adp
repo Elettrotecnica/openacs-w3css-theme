@@ -1,7 +1,8 @@
 <if @login_p;literal@ true>
   <div class="w3-dropdown-click">
     <a href="#"
-       class="w3-bar-item w3-button" style="text-decoration:none;">@photo;noquote@ &#9660;</a>
+       class="w3-bar-item w3-button"
+       style="text-decoration:none;">@photo;noquote@ &#9660;</a>
     <div class="w3-dropdown-content w3-bar-block w3-card-4">
       <!-- user greeting or login message -->
       <a class="w3-bar-item w3-button"

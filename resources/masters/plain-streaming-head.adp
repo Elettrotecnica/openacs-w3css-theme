@@ -2,24 +2,31 @@
   <property name="&doc">doc</property>
   <if @streaming_head@ defined><property name="streaming_head">@streaming_head;literal@</property></if>
 
-  <div class="w3-container w3-padding w3-gray">
-    <a class="navbar-brand w3-btn w3-light-gray w3-bar-item w3-round w3-border"
-       href="@subsite_url;literal@">
+  <script src="/resources/openacs-w3css-theme/js/master.js"></script>
+
+  <style>
+    .oacs-navbar a { color: black; }
+  </style>
+
+  <% set system_name [ad_system_name] %>
+
+  <div class="w3-top w3-grey oacs-navbar" id="oacs-navbar-small">
+    <div class="w3-bar-item w3-border w3-white w3-padding-small">
       <if @subsite_logo@ not nil>
         <img src="@subsite_logo;literal@" alt="Home">
       </if>
       <else>
-        <div>#acs-subsite.Subsite_Home#</div>
+        <b>@system_name@</b>
       </else>
-    </a>
-    <button class="w3-button w3-border w3-round w3-xlarge w3-right sidebar-open">
-      &#9776;
-    </button>
+    </div>
+    <div class="w3-bar w3-opacity w3-hover-opacity-off w3-center w3-small" style="display: flex;">
+      <widget src="login" ds="0" &="subsite_url">
+        <if @navigation:rowcount@ defined>
+          <widget src="navigation" &="navigation" ds="0" &="subsite_url" &="subsite_name">
+        </if>
+    </div>
   </div>
 
-  <div class="w3-panel">
-    <widget src="search" ds="0">
-  </div>
-  <if @context_bar@ defined and @context_bar@ ne "">
-    <div class="w3-panel">@context_bar;noquote@</div>
-  </if>
+  <% # Because the content is open-ended when streaming, we do not close these tags %>
+  <div id="oacs-main">
+    <div class="w3-panel">

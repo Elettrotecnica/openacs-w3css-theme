@@ -12,46 +12,19 @@
     <property name="focus">@focus;literal@</property>
   </if>
 
-  <div
-    class="w3-sidebar w3-bar-block w3-card w3-animate-right"
-    style="width:200px;right:0;display:none;">
-    <button class="w3-bar-item w3-button w3-large w3-border w3-light-grey sidebar-close">
-      &times;
-    </button>
-    <!-- NAVBAR START -->
-    <if @navigation:rowcount@ defined>
-      <widget src="navigation" &="navigation" ds="0" &="subsite_url" &="subsite_name">
-    </if>
-    <!-- NAVBAR END -->
-    <widget src="login" ds="0" &="subsite_url">
-  </div>
+  <widget src="header-bar" ds="0" &="subsite_logo" &="navigation" &="subsite_url" &="subsite_name">
 
-  <div class="w3-main">
-    <!-- START HEADER -->
-    <div class="w3-container w3-padding w3-gray">
-      <a class="navbar-brand w3-btn w3-light-gray w3-bar-item w3-border w3-padding-16"
-         href="@subsite_url;literal@">
-        <if @subsite_logo@ not nil>
-          <img src="@subsite_logo;literal@" alt="Home">
-        </if>
-        <else>
-          <div>#acs-subsite.Subsite_Home#</div>
-        </else>
-      </a>
-      <button class="w3-button w3-border w3-round w3-xlarge w3-right sidebar-open">
-        &#9776;
-      </button>
-    </div>
-
-    <div class="w3-panel">
-      <widget src="search" ds="0">
-    </div>
-    <if @context_bar@ defined and @context_bar@ ne "">
-      <div class="w3-panel">@context_bar;noquote@</div>
-    </if>
-    <!-- END HEADER -->
-
-    <div class="w3-container">
+  <!-- Page Content -->
+  <div id="oacs-main">
+    <header class="w3-container w3-grey w3-center">
+      <div class="w3-panel">
+        <widget src="search" ds="0">
+      </div>
+      <if @context_bar@ defined and @context_bar@ ne "">
+        <div class="w3-panel oacs-navbar">
+          @context_bar;noquote@
+        </div>
+      </if>
 
       <if @user_messages:rowcount@ gt 0>
         <div id="w3css-alert-message">
@@ -64,9 +37,9 @@
           </multiple>
         </div>
       </if>
-    </div>
+    </header>
 
-    <div class="w3-container w3-margin-bottom">
+    <div class="w3-panel">
       <!-- START MAIN CONTENT -->
       <slave>
         <!-- END MAIN CONTENT -->
@@ -83,36 +56,5 @@
         <%= [expr {[ns_conn isconnected] && [string match *.* [ns_conn peeraddr]] ? "IPv4" : "IPv6"}] %>)
       </p>
     </div>
-  <!-- END FOOTER -->
+    <!-- END FOOTER -->
   </div>
-  <script <if @::__csp_nonce@ not nil> nonce="@::__csp_nonce;literal@"</if>>
-    window.addEventListener('load', () => {
-        const sidebar = document.querySelector('.w3-sidebar');
-        for (const el of document.querySelectorAll('.sidebar-close')) {
-            el.addEventListener('click', function (evt) {
-                sidebar.style.display = 'none';
-            });
-        }
-        for (const el of document.querySelectorAll('.sidebar-open')) {
-            el.addEventListener('click', function (evt) {
-                sidebar.style.display = 'block';
-            });
-        }
-        for (const el of document.querySelectorAll('.w3-dropdown-click a.w3-button')) {
-            const subMenu = el.nextElementSibling;
-            if (subMenu && subMenu.matches('.w3-dropdown-content')) {
-                el.addEventListener('click', function (evt) {
-                    subMenu.classList.toggle('w3-show');
-                });
-            }
-        }
-    });
-    window.addEventListener('click', (e) => {
-        if (e.target.closest('.w3-dropdown-click')) {
-            return;
-        }
-        for (const el of document.querySelectorAll('.w3-show')) {
-            el.classList.remove('w3-show');
-        }
-    });
-  </script>
