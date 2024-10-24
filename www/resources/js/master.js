@@ -31,12 +31,12 @@ function keepRightOfSideBar() {
     if (!nav) { return; }
     document.getElementById('oacs-main').style.marginLeft = `${nav.offsetWidth}px`;
 };
-window.addEventListener('load', keepRightOfSideBar);
+keepRightOfSideBar();
 window.addEventListener('resize', keepRightOfSideBar);
 
 function keepBelowTopBar() {
     const nav = document.getElementById('oacs-navbar-small');
     document.getElementById('oacs-main').style.marginTop = `${nav.offsetHeight}px`;
 };
-window.addEventListener('load', keepBelowTopBar);
+keepBelowTopBar();
 window.addEventListener('resize', keepBelowTopBar);

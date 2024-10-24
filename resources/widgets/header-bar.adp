@@ -1,5 +1,3 @@
-<script src="/resources/openacs-w3css-theme/js/master.js"></script>
-
 <style>
   .oacs-navbar a { color: black; }
 </style>

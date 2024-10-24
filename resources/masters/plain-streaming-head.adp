@@ -2,8 +2,6 @@
   <property name="&doc">doc</property>
   <if @streaming_head@ defined><property name="streaming_head">@streaming_head;literal@</property></if>
 
-  <script src="/resources/openacs-w3css-theme/js/master.js"></script>
-
   <style>
     .oacs-navbar a { color: black; }
   </style>
@@ -30,3 +28,4 @@
   <% # Because the content is open-ended when streaming, we do not close these tags %>
   <div id="oacs-main">
     <div class="w3-panel">
+      <script src="/resources/openacs-w3css-theme/js/master.js"></script>

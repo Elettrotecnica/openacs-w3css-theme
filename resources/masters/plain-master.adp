@@ -58,3 +58,4 @@
     </div>
     <!-- END FOOTER -->
   </div>
+  <script src="/resources/openacs-w3css-theme/js/master.js"></script>
