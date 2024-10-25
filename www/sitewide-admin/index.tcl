@@ -5,12 +5,17 @@ ad_page_contract {
 } {
 }
 
-set resource_info [::openacs_w3css_theme::resource_info]
-set version [dict get $resource_info configuredVersion]
+set resource_info1 [::openacs_w3css_theme::resource_info]
+set version1 [dict get $resource_info1 configuredVersion]
+set resoure_name1  [dict get $resource_info1 resourceName]
+set download_url1 download
 
-set resource_color_info [::openacs_w3css_theme_color::resource_info -version $version]
+set resource_info2 [::openacs_w3css_theme_color::resource_info]
+set version2 [dict get $resource_info2 configuredVersion]
+set resoure_name2  [dict get $resource_info2 resourceName]
+set download_url2 download-themes
 
-set title "[dict get $resource_info resourceName] - Sitewide Admin"
+set title "[dict get $resource_info1 resourceName] - Sitewide Admin"
 set context [list $title]
 
 
