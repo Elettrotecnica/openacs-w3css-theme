@@ -16,7 +16,7 @@
             <span class="w3-btn w3-teal">@filters.label@</span>
           </if>
           <else>
-            <a class="w3-btn w3-light-gray"
+            <a class="w3-btn w3-theme-l3"
                href="@filters.url@"
                title="@filters.url_html_title@">@filters.label@</a>
           </else>

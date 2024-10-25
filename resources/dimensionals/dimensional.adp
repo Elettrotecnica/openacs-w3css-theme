@@ -6,11 +6,11 @@
         <group column="key">
           <if @dimensional.selected@ true>
             <span
-              class="w3-button w3-round w3-light-grey w3-border">@dimensional.group_label@</span>
+              class="w3-button w3-round w3-theme-l3 w3-border">@dimensional.group_label@</span>
           </if>
           <else>
             <a
-              class="w3-button w3-round w3-white w3-border"
+              class="w3-button w3-round w3-theme-l5 w3-border"
               href="@dimensional.href@">@dimensional.group_label@</a>
           </else>
         </group>

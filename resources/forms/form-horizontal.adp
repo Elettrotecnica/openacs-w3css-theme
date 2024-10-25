@@ -21,7 +21,7 @@
                 <group column="widget">
                   <noparse><formwidget
                              id="@elements.id@"
-                             class="w3-button w3-round w3-light-grey w3-border">&nbsp;</noparse>
+                             class="w3-button w3-round w3-theme-l3 w3-border">&nbsp;</noparse>
                 </group>
               </div>
             </if>
@@ -125,7 +125,7 @@
                     <formwidget id="@elements.id@" class="w3-select">
                   </if>
                   <else>
-                    <formwidget id="@elements.id@" class="w3-select w3-light-gray">
+                    <formwidget id="@elements.id@" class="w3-select w3-theme-l3">
                   </else>
                 </elseif>
                 <else>
@@ -134,7 +134,7 @@
                     <formwidget id="@elements.id@" class="w3-input w3-border">
                   </if>
                   <else>
-                    <formwidget id="@elements.id@" class="w3-input w3-border w3-light-gray">
+                    <formwidget id="@elements.id@" class="w3-input w3-border w3-theme-l3">
                   </else>
                 </else>
               </noparse>

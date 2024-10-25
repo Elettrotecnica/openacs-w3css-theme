@@ -9,7 +9,7 @@
     <implements-subsite-p>f</implements-subsite-p>
     <inherit-templates-p>f</inherit-templates-p>
     
-    <version name="2.0.1" url="http://openacs.org/repository/download/apm/openacs-w3css-theme-2.0.1.apm">
+    <version name="2.1.0" url="http://openacs.org/repository/download/apm/openacs-w3css-theme-2.1.0.apm">
         <owner url="mailto:antonio@elettrotecnica.it">Antonio Pisano</owner>
         <summary>Theme for OpenACS based on W3Schools W3.CSS</summary>
         <release-date>2024-09-02</release-date>
@@ -22,7 +22,7 @@
         <license>GPL version 2</license>
         <maturity>2</maturity>
 
-        <provides url="openacs-w3css-theme" version="2.0.1"/>
+        <provides url="openacs-w3css-theme" version="2.1.0"/>
 	<requires url="acs-tcl" version="5.10.1"/>
         <requires url="acs-kernel" version="5.10.1"/>
         <requires url="acs-subsite" version="5.10.1"/>
@@ -30,6 +30,7 @@
 
         <callbacks>
             <callback type="after-install"    proc="openacs_w3css_theme::apm::after_install"/>
+            <callback type="after-upgrade"    proc="openacs_w3css_theme::apm::after_upgrade"/>
             <callback type="before-uninstall" proc="openacs_w3css_theme::apm::before_uninstall"/>
         </callbacks>
         <parameters>

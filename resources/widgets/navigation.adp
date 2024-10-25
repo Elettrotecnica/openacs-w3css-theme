@@ -10,7 +10,7 @@
                  id="@navigation.id@"
                  style="font-weight: bold;"
                </if>
-               class="w3-bar-item w3-button w3-padding-large <if @navigation.id@ not nil>w3-light-gray</if> <if @navigation.class@ not nil>@navigation.class;noquote@</if>"
+               class="w3-bar-item w3-button w3-padding-large <if @navigation.id@ not nil>w3-theme-l3</if> <if @navigation.class@ not nil>@navigation.class;noquote@</if>"
                <if @navigation.class@ not nil> class="@navigation.class;noquote@"</if>
                <if @navigation.title@ not nil> title="@navigation.title;noquote@"</if>
                <if @navigation.lang@ not nil> lang="@navigation.lang;noquote@"</if>
@@ -26,7 +26,7 @@
         </if>
         <else>
           <a href="@navigation.href@"
-             class="w3-bar-item w3-button w3-padding-large <if @navigation.id@ not nil>w3-light-gray</if> @navigation.class;noquote@"
+             class="w3-bar-item w3-button w3-padding-large <if @navigation.id@ not nil>w3-theme-l3</if> @navigation.class;noquote@"
              <if @navigation.id@ not nil>
                id="@navigation.id@"
                style="font-weight: bold;"

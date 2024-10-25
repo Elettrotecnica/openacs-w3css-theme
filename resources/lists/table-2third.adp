@@ -141,7 +141,7 @@
     <multiple name="actions">
       <a href="@actions.url@"
          title="@actions.title@"
-         class="w3-button w3-light-gray">@actions.label@</a></li>
+         class="w3-button w3-theme-l3">@actions.label@</a></li>
 </multiple>
 </div>
 <!-- end of list-button-bar-top div -->
@@ -324,7 +324,7 @@
              title="@bulk_actions.title@"
              id="@list_properties.name;literal@-bulk_action-@bulk_actions.rownum;literal@"
              value="@bulk_actions.label@"
-             class="w3-btn w3-light-gray">
+             class="w3-btn w3-theme-l3">
     </multiple>
   </div>
   <!-- end of list-button-bar-bottom div -->

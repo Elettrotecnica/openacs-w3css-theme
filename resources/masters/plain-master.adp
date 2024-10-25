@@ -16,7 +16,7 @@
 
   <!-- Page Content -->
   <div id="oacs-main">
-    <header class="w3-container w3-grey w3-center">
+    <header class="w3-container w3-theme-l1 w3-center">
       <div class="w3-panel">
         <widget src="search" ds="0">
       </div>
@@ -46,7 +46,7 @@
     </div>
 
     <!-- START FOOTER -->
-    <div class="w3-container w3-center w3-light-gray">
+    <div class="w3-container w3-center w3-theme-l3">
       <p style="font-size: 80%">
         This website is maintained by the OpenACS community. Any problems, email <a href="mailto:@signatory@">webmaster</a> or <a href="https://openacs.org/bugtracker/openacs.org/">submit</a> a bug report.
         <br>

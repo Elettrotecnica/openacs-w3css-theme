@@ -1,6 +1,6 @@
 <div class="w3-panel">
   <a
-    class="w3-btn w3-light-gray w3-border"
+    class="w3-btn w3-theme-l3 w3-border"
     href='@downloads_multirow.download_url@'
     style="color:#fff;">
     Download <adp:icon name="download">

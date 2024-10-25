@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <message_catalog package_key="openacs-w3css-theme" locale="it_IT" charset="ISO-8859-1">
 
-  <msg key="plain">Tema W3.CSS OpenACS</msg>
+  <msg key="amber_theme">Tema OpenACS W3.CSS (Ambra)</msg>
+  <msg key="black_theme">Tema W3.CSS di OpenACS (Nero)</msg>
+  <msg key="blue_theme">Tema W3.CSS OpenACS (Blu)</msg>
+  <msg key="blue-grey_theme">Tema W3.CSS di OpenACS (Blu-Grigio)</msg>
+  <msg key="brown_theme">Tema OpenACS W3.CSS (Marrone)</msg>
+  <msg key="cyan_theme">Tema W3.CSS di OpenACS (Ciano)</msg>
+  <msg key="dark-grey_theme">Tema W3.CSS di OpenACS (Grigio Scuro)</msg>
+  <msg key="deep-orange_theme">Tema W3.CSS di OpenACS (Arancione Intenso)</msg>
+  <msg key="deep-purple_theme">Tema W3.CSS di OpenACS (Porpora Intenso)</msg>
+  <msg key="green_theme">Tema OpenACS W3.CSS (Verde)</msg>
+  <msg key="grey_theme">Tema OpenACS W3.CSS (Grigio)</msg>
+  <msg key="indigo_theme">Tema W3.CSS OpenACS (Indigo)</msg>
+  <msg key="khaki_theme">Tema OpenACS W3.CSS (Khaki)</msg>
+  <msg key="light-blue_theme">Tema W3.CSS di OpenACS (Blu Chiaro)</msg>
+  <msg key="light-green_theme">Tema OpenACS W3.CSS (Verde Chiaro)</msg>
+  <msg key="lime_theme">Tema OpenACS W3.CSS (Lime)</msg>
+  <msg key="orange_theme">Tema W3.CSS OpenACS (Arancione)</msg>
+  <msg key="pink_theme">Tema W3.CSS OpenACS (Rosa)</msg>
+  <msg key="purple_theme">Tema W3.CSS OpenACS (Viola)</msg>
+  <msg key="red_theme">Tema W3.CSS di OpenACS (Rosso)</msg>
+  <msg key="teal_theme">Tema W3.CSS di OpenACS (Verde Acqua)</msg>
+  <msg key="yellow_theme">Tema W3.CSS di OpenACS (Giallo)</msg>
 </message_catalog>

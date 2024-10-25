@@ -26,7 +26,7 @@
                   <a class="w3-bar-item w3-button page-link" href="\@paginator_pages.url@" title="\@paginator_pages.context@">\@paginator_pages.page@</a>
                 </if>
                 <else>
-                  <a class="w3-bar-item w3-button w3-light-gray page-link" href="#">\@paginator_pages.page@ <span class="visually-hidden">(current)</span></a>
+                  <a class="w3-bar-item w3-button w3-theme-l3 page-link" href="#">\@paginator_pages.page@ <span class="visually-hidden">(current)</span></a>
                 </else>
               </multiple>
 
@@ -87,7 +87,7 @@
     <multiple name="actions">
       <a href="@actions.url@"
          title="@actions.title@"
-         class="w3-button w3-round w3-light-grey w3-border">@actions.label@</a>
+         class="w3-button w3-round w3-theme-l3 w3-border">@actions.label@</a>
     </multiple>
   </div>
   <!-- end of list-button-bar-top div -->
@@ -253,7 +253,7 @@
              title="@bulk_actions.title@"
              id="@list_properties.name;literal@-bulk_action-@bulk_actions.rownum;literal@"
              value="@bulk_actions.label@"
-             class="w3-button w3-round w3-light-grey w3-border text-decoration-none">
+             class="w3-button w3-round w3-theme-l3 w3-border text-decoration-none">
     </multiple>
   </div>
   <!-- end of list-button-bar-bottom div -->
@@ -288,7 +288,7 @@
                   <a class="w3-bar-item w3-button page-link" href="\@paginator_pages.url@" title="\@paginator_pages.context@">\@paginator_pages.page@</a>
                 </if>
                 <else>
-                  <a class="w3-bar-item w3-button w3-light-gray page-link" href="#">\@paginator_pages.page@ <span class="visually-hidden">(current)</span></a>
+                  <a class="w3-bar-item w3-button w3-theme-l3 page-link" href="#">\@paginator_pages.page@ <span class="visually-hidden">(current)</span></a>
                 </else>
               </multiple>
 

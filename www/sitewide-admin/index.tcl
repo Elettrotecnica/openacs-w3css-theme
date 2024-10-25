@@ -8,6 +8,8 @@ ad_page_contract {
 set resource_info [::openacs_w3css_theme::resource_info]
 set version [dict get $resource_info configuredVersion]
 
+set resource_color_info [::openacs_w3css_theme_color::resource_info -version $version]
+
 set title "[dict get $resource_info resourceName] - Sitewide Admin"
 set context [list $title]
 
