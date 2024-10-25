@@ -1,6 +1,6 @@
 # OpenACS W3.CSS Theme package
 
-This package provides a theme based on the [W3.CSS framework](https://www.w3schools.com/w3css/) in 22 [color schemes](https://www.w3schools.com/w3css/w3css_color_themes.asp).
+This package provides an [OpenACS](https://openacs.org/) theme based on the [W3.CSS framework](https://www.w3schools.com/w3css/) in 22 [color schemes](https://www.w3schools.com/w3css/w3css_color_themes.asp).
 
 ## On a large screen
 
