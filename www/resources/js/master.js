@@ -13,7 +13,14 @@ window.addEventListener('load', () => {
         });
     }
 });
-
+/* Dismiss alerts upon clicking on the button */
+window.addEventListener('load', () => {
+    for (const el of document.querySelectorAll('#w3css-alert-message [data-bs-dismiss]')) {
+        el.addEventListener('click', function (evt) {
+            el.parentElement.remove();
+        });
+    }
+});
 /* Unclick every menu when we click somewhere else */
 window.addEventListener('click', (e) => {
     if (e.target.closest('.w3-dropdown-click')) {

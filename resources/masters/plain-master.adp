@@ -29,7 +29,7 @@
       <if @user_messages:rowcount@ gt 0>
         <div id="w3css-alert-message">
           <multiple name="user_messages">
-            <div class="w3-panel w3-pale-green">
+            <div class="w3-panel w3-pale-green w3-left-align">
 	      <a class="w3-btn" data-bs-dismiss="alert">×</a>
 	      <i class="bi bi-info-square-fill"></i>
               @user_messages.message;noquote@
