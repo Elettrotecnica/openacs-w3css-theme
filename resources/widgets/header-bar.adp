@@ -1,5 +1,5 @@
 <style>
-  .oacs-navbar a { color: black; }
+  .oacs-navbar a { color: inherit; }
 </style>
 
 <% set system_name [ad_system_name] %>

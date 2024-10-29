@@ -3,7 +3,7 @@
   <if @streaming_head@ defined><property name="streaming_head">@streaming_head;literal@</property></if>
 
   <style>
-    .oacs-navbar a { color: black; }
+    .oacs-navbar a { color: inherit; }
   </style>
 
   <% set system_name [ad_system_name] %>
