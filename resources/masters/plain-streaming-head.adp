@@ -1,5 +1,7 @@
 <%
   source [acs_package_root_dir openacs-default-theme]/lib/plain-streaming-head.tcl
+
+  set subsite_name [lang::util::localize [subsite::get_element -element instance_name]]
   %>
 <master src="/www/blank-master">
   <property name="&doc">doc</property>
