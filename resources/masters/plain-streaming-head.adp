@@ -1,3 +1,6 @@
+<%
+  source [acs_package_root_dir openacs-default-theme]/lib/plain-streaming-head.tcl
+  %>
 <master src="/www/blank-master">
   <property name="&doc">doc</property>
   <if @streaming_head@ defined><property name="streaming_head">@streaming_head;literal@</property></if>

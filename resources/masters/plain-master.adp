@@ -1,3 +1,10 @@
+<%
+
+  source [acs_package_root_dir openacs-default-theme]/lib/plain-master.tcl
+
+  if {![info exists signatory]} { set signatory [ad_system_owner] }
+
+  %>
 <master src="/www/blank-master">
   <if @doc@ defined><property name="&doc">doc</property></if>
   <if @body@ defined><property name="&body">body</property></if>
@@ -20,11 +27,25 @@
       <div class="w3-panel">
         <widget src="search" ds="0">
       </div>
-      <if @context_bar@ defined and @context_bar@ ne "">
-        <div class="w3-panel oacs-navbar">
+      <div class="w3-panel oacs-navbar">
+        <if @context_bar@ not nil>
           @context_bar;noquote@
-        </div>
-      </if>
+        </if>
+        <else>
+          <if @context:rowcount@ not nil>
+            <ul class="compact">
+              <multiple name="context">
+                <if @context.url@ not nil>
+                  <li><a href="@context.url@">@context.label@</a> @separator@</li>
+                </if>
+                <else>
+                  <li>@context.label@</li>
+                </else>
+              </multiple>
+            </ul>
+          </if>
+        </else>
+      </div>
 
       <if @user_messages:rowcount@ gt 0>
         <div id="w3css-alert-message">
