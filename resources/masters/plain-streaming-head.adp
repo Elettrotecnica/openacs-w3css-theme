@@ -8,7 +8,7 @@
 
   <% set system_name [ad_system_name] %>
 
-  <div class="w3-top w3-theme-l1 oacs-navbar" id="oacs-navbar-small">
+  <div class="w3-top w3-theme-l1 w3-card oacs-navbar" id="oacs-navbar-small">
     <div class="w3-bar-item w3-border w3-theme-l5 w3-padding-small">
       <if @subsite_logo@ not nil>
         <img src="@subsite_logo;literal@" alt="Home">
