@@ -47,3 +47,12 @@ function keepBelowTopBar() {
 };
 keepBelowTopBar();
 window.addEventListener('resize', keepBelowTopBar);
+
+if (window.YAHOO) {
+    /*
+     * Undo some global styling by YUI that would interfere with the
+     * theme.
+     */
+    document.body.style.font = 'inherit !important';
+    document.body.style.margin = 'inherit !important';
+}
