@@ -9,10 +9,10 @@
     <implements-subsite-p>f</implements-subsite-p>
     <inherit-templates-p>f</inherit-templates-p>
 
-    <version name="2.1.7" url="http://openacs.org/repository/download/apm/openacs-w3css-theme-2.1.7.apm">
+    <version name="2.2.0" url="http://openacs.org/repository/download/apm/openacs-w3css-theme-2.2.0.apm">
         <owner url="mailto:antonio@elettrotecnica.it">Antonio Pisano</owner>
         <summary>Theme for OpenACS based on W3Schools W3.CSS</summary>
-        <release-date>2024-10-30</release-date>
+        <release-date>2024-11-07</release-date>
         <vendor url="http://wu.ac.at">WU Vienna</vendor>
         <description format="text/plain">This package provides a theme based on
 	W3Schools W3.CSS. The theme can be activated via
@@ -22,10 +22,9 @@
         <license>GPL version 2</license>
         <maturity>2</maturity>
 
-        <provides url="openacs-w3css-theme" version="2.1.7"/>
-        <requires url="acs-kernel" version="5.10.1"/>
+        <provides url="openacs-w3css-theme" version="2.2.0"/>
         <requires url="acs-subsite" version="5.10.1"/>
-        <requires url="acs-tcl" version="5.10.1"/>
+        <requires url="acs-tcl" version="6.0.0d3"/>
         <requires url="acs-templating" version="5.10.1"/>
         <requires url="openacs-default-theme" version="5.10.1"/>
 
